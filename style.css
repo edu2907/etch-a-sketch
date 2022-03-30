@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* General */
+html {
+    height: 100vh;
+}
+body {
+    background-color: #FADFA0;
+    margin: 0px;
+    height: 100%;
+}
+.container {
+    height: 85%;
+    display: flex;
+}
+/* Header */
+header {
+    background-color: #7A622A;
+    height: 15%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    font-family: Lobster, cursive;
+    margin: 0px;
+}
+/* Panel */
+#panel {
+    background-color: #C7B17F;
+    width: 164px;
+    height: 100%;
+}
+/* Screen */
+#screen {
+    background-color: rgba(0, 0, 0, 0.37);
+    margin: auto;
+    width: 640px;
+    height: 640px;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    flex: 0 0 auto;
+}
