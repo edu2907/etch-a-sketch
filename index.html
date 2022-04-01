@@ -10,19 +10,29 @@
 <body>
     <header>
         <h1>Etch-a-Sketch!</h1>
-        <a href="https://github.com/edu2907/etch-a-sketch" target="_blank"><img src="imgs/github-logo.png" alt="github profile"></a>
+        <a href="https://github.com/edu2907/etch-a-sketch" target="_blank"><img src="imgs/github-logo.png"
+                alt="github profile"></a>
     </header>
     <div class="container">
         <div id="panel">
             <div id="buttons">
-                <div id="colors">
-                    <button>Black</button>
-                    <button>White</button>
+                <div id="colors_area">
+                    <h2>Colors</h2>
+                    <div class="color_option">
+                        <span class="colorname">RGB:</span><input type="color" id="rgb_color" class="colorbutton">
+                    </div>
+                    <div class="color_option">
+                        <span class="colorname">Black: </span> <div id="black" class="colorbutton"></div>
+                    </div>
+                    <div class="color_option">
+                        <span class="colorname">White: </span><div id="white" class="colorbutton"></div>
+                    </div>
                 </div>
                 <button>Clear</button>
                 <input type="range" name="" id="">
             </div>
-            <a href="https://www.flaticon.com/br/packs/font-awesome" target="_blank" class="credits"><span>Image Credits </span><span>- by Dave Gandy</span></a>
+            <a href="https://www.flaticon.com/br/packs/font-awesome" target="_blank" class="credits"><span>Image Credits
+                </span><span>- by Dave Gandy</span></a>
         </div>
         <div id="screen"></div>
     </div>
