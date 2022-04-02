@@ -22,17 +22,24 @@
                         <span class="colorname">RGB:</span><input type="color" id="rgb_color" class="colorbutton">
                     </div>
                     <div class="color_option">
-                        <span class="colorname">Black: </span> <div id="black" class="colorbutton"></div>
+                        <span class="colorname">Black: </span>
+                        <div id="black" class="colorbutton"></div>
                     </div>
                     <div class="color_option">
-                        <span class="colorname">White: </span><div id="white" class="colorbutton"></div>
+                        <span class="colorname">White: </span>
+                        <div id="white" class="colorbutton"></div>
                     </div>
                 </div>
-                <button>Clear</button>
-                <input type="range" name="" id="">
+                <button class="pannelbutton" id="clearbutton" onclick="clean()">Clear</button>
+                <div id="gridsize">
+                    <span>Enter grid size here:</span>
+                    <input type="text" id="sizeInput" maxlength="2" placeholder="64">
+                    <button class="pannelbutton" onclick="resize(event.target.previousElementSibling.value)">Submit</button>
+                </div>
             </div>
-            <a href="https://www.flaticon.com/br/packs/font-awesome" target="_blank" class="credits"><span>Image Credits
-                </span><span>- by Dave Gandy</span></a>
+            <a href="https://www.flaticon.com/br/packs/font-awesome" target="_blank" class="credits">
+                <span>Image Credits</span><span>- by Dave Gandy</span>
+            </a>
         </div>
         <div id="screen"></div>
     </div>
