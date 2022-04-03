@@ -28,15 +28,16 @@ let buttonList = {
 }
 buttonList.blackColor.addEventListener('click', changeColor)
 buttonList.whiteColor.addEventListener('click', changeColor)
+buttonList.rgbColor.addEventListener('click', changeColor)
 buttonList.rgbColor.addEventListener('input', changeColor)
 buttonList.rgbColor.addEventListener('change', changeColor)
 let color = 'black'
 function changeColor(event) {
-    if (event.type == 'click') {
-        color = event.target.id
+    if (event.target == buttonList.rgbColor) {
+        color = event.target.value
     }
     else {
-        color = event.target.value
+        color = event.target.id
     }
 }
 
@@ -46,12 +47,17 @@ function clean() {
     }
 }
 
+const inputText = document.getElementById("inputText")
 function resize(newSize) {
-    gridSize = newSize**2
-    for(i = 0; i < pixelList.length; i++) {
+    gridSize = newSize ** 2
+    for (i = 0; i < pixelList.length; i++) {
         screen.removeChild(pixelList[i])
     }
     pixelList = []
-    pixelSize = (640*newSize)/gridSize
+    pixelSize = (640 * newSize) / gridSize
+    if ((pixelSize ** 2) * gridSize > 640) {
+        pixelSize -= 0.01
+    }
+    inputText.textContent = "Enter grid size here:"
     createGrid()
 }

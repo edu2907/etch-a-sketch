@@ -19,7 +19,8 @@
                 <div id="colors_area">
                     <h2>Colors</h2>
                     <div class="color_option">
-                        <span class="colorname">RGB:</span><input type="color" id="rgb_color" class="colorbutton">
+                        <span class="colorname">RGB:</span>
+                        <input type="color" id="rgb_color" class="colorbutton">
                     </div>
                     <div class="color_option">
                         <span class="colorname">Black: </span>
@@ -32,7 +33,7 @@
                 </div>
                 <button class="pannelbutton" id="clearbutton" onclick="clean()">Clear</button>
                 <div id="gridsize">
-                    <span>Enter grid size here:</span>
+                    <span id="inputText">Enter grid size here:</span>
                     <input type="text" id="sizeInput" maxlength="2" placeholder="64">
                     <button class="pannelbutton" onclick="resize(event.target.previousElementSibling.value)">Submit</button>
                 </div>
